@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <h2>Welcome to Length Converter.</h2>
+        </nav>
+    </div>
+    <div class="container">
+        <table>
+            <tr><th colspan="2">Convert Lengths</th></tr>
+            <tr>
+                <td><input onkeyup="call1(this.value)" id="f1" type="text" name="" placeholder="Length"></td>
+                <td><input onkeyup="call2(this.value)" id="f2" type="text" name="" placeholder="Converted Length"></td>
+            </tr>
+            <tr>
+                <td>
+                    <select id='select1' onchange="clearf(this)"> <!--onchange will clear all the inputs on selecting another option, this refers to the current selection -->
+                        <option>Kilometer</option>
+                        <option>Centimeter</option>
+                        <option>Meter</option>
+                        <option>Millimeter</option>
+                    </select>
+                </td>
+                <td>
+                    <select id='select2' onchange="clearf(this)">
+                        <option>Kilometer</option>
+                        <option>Centimeter</option>
+                        <option>Meter</option>
+                        <option>Millimeter</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
